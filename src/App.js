@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './Component.css'
 import R001Component from './R001_Component';
 import R002Component from './R002_Component';
 

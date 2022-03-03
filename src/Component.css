@@ -1,0 +1,22 @@
+/* R001_Component */
+.r001-title {
+  text-align: left;
+}
+
+.r001-link {
+  margin-left: 50px;
+  color: green;
+  text-decoration: none;
+}
+
+.r001-link:last-child {
+  margin-left: 20px;
+}
+
+/* R002_Component */
+.r002-title {
+  text-align: left;
+}
+
+.r002-script {
+}
