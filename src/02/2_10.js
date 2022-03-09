@@ -27,6 +27,7 @@ Shape.prototype = {
   }
 };
 
+// 변수와 함수를 prototype 객체에 할당
 var s = new Shape(0, 0);
 var s2 = Shape.create(0, 0);
 s.area(); // 0
