@@ -40,15 +40,16 @@ function Circle(x, y, radius) {
   this.name = 'Circle';
   this.radius = radius;
 }
-// Object.assign(Circle.prototype, Shape.prototype, {
-//   // 부모클래스의 함수 상송
-//   area: function() {
-//     // area 함수는 오버라이드
-//     return this.radius * this.radius;
-//   }
-// });
+Object.assign(Circle.prototype, Shape.prototype, {
+  // 부모클래스의 함수 상송
+  area: function() {
+    // area 함수는 오버라이드
+    return this.radius * this.radius;
+  }
+});
 
-// var c = new Circle(0, 0, 10);
+var c = new Circle(0, 0, 10);
+console.log(c.name, c.area());
 
 // Rectangle
 function Rectangle(x, y, length) {
