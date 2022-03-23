@@ -75,17 +75,15 @@ Object.assign(Rectangle.prototype, Shape.prototype, {
     const px2 = x2 - length2 / 2;
     const py1 = y1 + length1 / 2;
     const py2 = y2 + length2 / 2;
-    if ((px1 <= px2) || ((px1 + length1) >= (px2 + length2))) {
-      if ((py1 >= py2) || ((py1 - length1) <= (py2 - length2))) {
-        return true
-      }
+    if ((px1 + length1 < px2) || (px1 > (px2 + length2)) || (py1 < (py2 - length2)) || ((py1 - length1) > py2)) {
+      return false;
     }
     else {
-      return false;
+      return true;
     }
   }
 });
-const r = new Rectangle(10, 10, 20);
+const r = new Rectangle(100, 10, 20);
 console.log(r.name, r.area());
-console.log(r.overlap(5,5,1));
+console.log(r.overlap(5,5,0));
 
