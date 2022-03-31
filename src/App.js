@@ -8,6 +8,7 @@ import Es6 from "../src/04/4_13";
 import Variable from "../src/04/4_14";
 import SpreadOperator from "../src/04/4_15";
 import ClassPrototype from "./04/4_16";
+import Map from "./05/5_6";
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
         <Variable />
         <SpreadOperator />
         <ClassPrototype />
+        <Map />
       </div>
     );
   }
