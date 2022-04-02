@@ -9,6 +9,8 @@ import Variable from "../src/04/4_14";
 import SpreadOperator from "../src/04/4_15";
 import ClassPrototype from "./04/4_16";
 import Map from "./05/5_6";
+// import Jqeury from "./05/5_7";
+import ChildComponent from "./05/5_9";
 
 class App extends Component {
   render() {
@@ -24,6 +26,9 @@ class App extends Component {
         <SpreadOperator />
         <ClassPrototype />
         <Map />
+        {/* <Jqeury /> */}
+        <h1>부모 컴포넌트</h1>
+        <ChildComponent />
       </div>
     );
   }

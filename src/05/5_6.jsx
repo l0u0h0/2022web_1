@@ -3,7 +3,6 @@ import React, { Component } from "react";
 class Map extends Component {
   componentDidMount() {
     var Map_arr = [1, 2, 0, 0];
-    var Map_newarr = [];
     console.log("1. maparr : [" + Map_arr + "]");
 
     let Map_multiarr = Map_arr.map((x) => x + 2);
