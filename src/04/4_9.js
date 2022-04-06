@@ -1,18 +1,18 @@
 // 순서 상관 있을 때
 const work1 = () =>
   new Promise((resolve) => {
-    setTimeout(() => resolve("1 succe"), 2000);
+    setTimeout(() => resolve("1 success"), 2000);
   });
 const work2 = () =>
   new Promise((resolve) => {
-    setTimeout(() => resolve("2 succe"), 3000);
+    setTimeout(() => resolve("2 success"), 3000);
   });
 const work3 = () =>
   new Promise((resolve) => {
-    setTimeout(() => resolve("3 succe"), 1000);
+    setTimeout(() => resolve("3 success"), 1000);
   });
 function nextWork() {
-  console.log("next WOrk");
+  console.log("next Work...");
 }
 work1()
   .then((msg1) => {
