@@ -9,10 +9,9 @@ import PropType from "prop-types"; // prop-types 라이브러리 임폴트
 
 class PropsComponent extends React.Component {
   render() {
+    // name 프로퍼티 내용 출력
     return (
-      <div className="message=container">
-        {this.props.name} // name 프로퍼티 내용 출력
-      </div>
+      <div className="message=container">{this.props.name}from parent</div>
     );
   }
 }

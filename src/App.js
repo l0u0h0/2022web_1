@@ -11,6 +11,7 @@ import ClassPrototype from "./04/4_16";
 import Map from "./05/5_6";
 // import Jqeury from "./05/5_7";
 import ChildComponent from "./05/5_9";
+import PropsComponent from "./05/5_2";
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
         {/* <Jqeury /> */}
         <h1>부모 컴포넌트</h1>
         <ChildComponent />
+        <PropsComponent name="안녕?" />
       </div>
     );
   }
