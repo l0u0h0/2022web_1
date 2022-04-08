@@ -12,6 +12,8 @@ import Map from "./05/5_6";
 // import Jqeury from "./05/5_7";
 import ChildComponent from "./05/5_9";
 import PropsComponent from "./05/5_2";
+import BooleanComponent from "./06/6_2";
+import DefaultPropsComponent from "./06/6_4";
 
 class App extends Component {
   render() {
@@ -31,6 +33,17 @@ class App extends Component {
         <h1>부모 컴포넌트</h1>
         <ChildComponent />
         <PropsComponent name="안녕?" />
+        <div>
+          <b>지루할 때:</b>
+          <BooleanComponent bored />
+        </div>
+        <div>
+          <b>즐거울 떄:</b>
+          <BooleanComponent />
+        </div>
+        <div>
+          <DefaultPropsComponent />
+        </div>
       </div>
     );
   }
