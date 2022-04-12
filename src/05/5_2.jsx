@@ -11,7 +11,7 @@ class PropsComponent extends React.Component {
   render() {
     // name 프로퍼티 내용 출력
     return (
-      <div className="message=container">{this.props.name}from parent</div>
+      <div className="message-container">{this.props.name}from parent</div>
     );
   }
 }

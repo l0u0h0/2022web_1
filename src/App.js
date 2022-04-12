@@ -14,6 +14,10 @@ import ChildComponent from "./05/5_9";
 import PropsComponent from "./05/5_2";
 import BooleanComponent from "./06/6_2";
 import DefaultPropsComponent from "./06/6_4";
+import ChildProperty from "./06/6_5";
+import BooleanComponent1 from "./06/6_6";
+import ChildComponent2 from "./06/6_7";
+import StateExample from "./06/6_8";
 
 class App extends Component {
   render() {
@@ -44,6 +48,26 @@ class App extends Component {
         <div>
           <DefaultPropsComponent />
         </div>
+        <div>
+          <ChildProperty>
+            <span>자식 노드</span>
+          </ChildProperty>
+        </div>
+        <div>
+          <h3>퀴즈 3_2</h3>
+          <h2>부모 컴포넌트</h2>
+          <PropsComponent name="안녕?" />
+        </div>
+        <div>
+          <h3>quiz 3-3</h3>
+          <BooleanComponent1 />
+          <BooleanComponent1 bool />
+        </div>
+        <div>
+          <h3>quiz 3-4</h3>
+          <ChildComponent2 obj={{ react: "리액트", number: "10" }} />
+        </div>
+        <StateExample />
       </div>
     );
   }
