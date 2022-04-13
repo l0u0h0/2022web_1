@@ -35,3 +35,13 @@
     transform: rotate(360deg);
   }
 }
+
+.Lunch {
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: rgb(39, 39, 39);
+  font-size: 22pt;
+}

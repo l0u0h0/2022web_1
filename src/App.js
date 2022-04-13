@@ -98,7 +98,14 @@ class App extends Component {
           <ChildComponent3 member={{ name: "홍길동", job: "백엔드" }} />
           <ChildComponent3 member={{ name: "성춘향", job: "프론트엔드" }} />
         </div>
-        <div>
+        <div
+          style={{
+            border: "1px dashed black",
+            width: "500px",
+            height: "700px",
+          }}
+          className="Lunch"
+        >
           <h1>parent component</h1>
           <LunchComponent low={5000} high={10000} />
         </div>
