@@ -20,6 +20,9 @@ import ChildComponent2 from "./06/6_7";
 import StateExample from "./06/6_8";
 import PropertyComponent from "./07/7_1";
 import Child from "./07/7_2";
+import ChildComponent3 from "./07/7_3";
+import ChildComponent4 from "./07/7_4";
+import LunchComponent from "./07/7_5";
 
 class App extends Component {
   render() {
@@ -89,6 +92,15 @@ class App extends Component {
         <div>
           <h1>parent component</h1>
           <Child member={{ name: "홍길동", age: "10" }} />
+        </div>
+        <div>
+          <h1>parent component</h1>
+          <ChildComponent3 member={{ name: "홍길동", job: "백엔드" }} />
+          <ChildComponent3 member={{ name: "성춘향", job: "프론트엔드" }} />
+        </div>
+        <div>
+          <h1>parent component</h1>
+          <LunchComponent low={5000} high={10000} />
         </div>
       </div>
     );
