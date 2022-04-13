@@ -8,6 +8,11 @@ class ChildComponent extends Component {
     return (
       <div>
         <span>{boolValue}</span>
+        <span>{numValue}</span>
+        <span>{arrayValue}</span>
+        <span>{objValue}</span>
+        <span>{nodeValue}</span>
+        <span>{funcValue}</span>
       </div>
     );
   }

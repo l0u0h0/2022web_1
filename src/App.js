@@ -18,9 +18,14 @@ import ChildProperty from "./06/6_5";
 import BooleanComponent1 from "./06/6_6";
 import ChildComponent2 from "./06/6_7";
 import StateExample from "./06/6_8";
+import PropertyComponent from "./07/7_1";
+import Child from "./07/7_2";
 
 class App extends Component {
   render() {
+    const func = () => {
+      console.log("FunctionProps: function!");
+    };
     return (
       <div className="App">
         <h1 className="title">리액트 프로그래밍 시작</h1>
@@ -65,9 +70,26 @@ class App extends Component {
         </div>
         <div>
           <h3>quiz 3-4</h3>
+          <h1>부모 컴포넌트</h1>
           <ChildComponent2 obj={{ react: "리액트", number: "10" }} />
         </div>
         <StateExample />
+        <div>
+          <h3>quiz 3-5</h3>
+          <h1>부모 컴포넌트</h1>
+          <PropertyComponent
+            string={"react"}
+            number={10}
+            Bool={true}
+            Array={[0, 1, 0]}
+            obj={{ react: "리액트", number: "100" }}
+            func={func}
+          />
+        </div>
+        <div>
+          <h1>parent component</h1>
+          <Child member={{ name: "홍길동", age: "10" }} />
+        </div>
       </div>
     );
   }
