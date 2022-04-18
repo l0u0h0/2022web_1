@@ -25,8 +25,20 @@ import ChildComponent4 from "./07/7_4";
 import LunchComponent from "./07/7_5";
 import ChangeComponent from "./08/8_5";
 import ChangeComponent1 from "./08/8_6";
+import ForceUpdate from "./08/8_7";
+import LifecycleExample from "./08/8_9";
+import Counter from "./08/8_11";
+import NewCounter from "./08/8_12";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 10 };
+    this.resetCount = this.resetCount.bind(this);
+  }
+  resetCount() {
+    this.setState(({ count }) => ({ count: count + 10 }));
+  }
   render() {
     const func = () => {
       console.log("FunctionProps: function!");
@@ -113,6 +125,19 @@ class App extends Component {
         </div>
         <ChangeComponent />
         <ChangeComponent1 />
+        <ForceUpdate />
+        <LifecycleExample />
+        <div>
+          <div>
+            <Counter count={this.state.count} />
+          </div>
+          <div>
+            <NewCounter count={this.state.count} />
+            <button onClick={this.resetCount}>
+              {this.state.count + 10}으로 초기화
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
