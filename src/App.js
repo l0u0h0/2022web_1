@@ -23,6 +23,8 @@ import Child from "./07/7_2";
 import ChildComponent3 from "./07/7_3";
 import ChildComponent4 from "./07/7_4";
 import LunchComponent from "./07/7_5";
+import ChangeComponent from "./08/8_5";
+import ChangeComponent1 from "./08/8_6";
 
 class App extends Component {
   render() {
@@ -109,6 +111,8 @@ class App extends Component {
           <h1>parent component</h1>
           <LunchComponent low={5000} high={10000} />
         </div>
+        <ChangeComponent />
+        <ChangeComponent1 />
       </div>
     );
   }
