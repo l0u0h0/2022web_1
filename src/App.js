@@ -121,7 +121,7 @@ class App extends Component {
           className="Lunch"
         >
           <h1>parent component</h1>
-          <LunchComponent low={5000} high={10000} />
+          <LunchComponent low={6000} high={9000} />
         </div>
         <ChangeComponent />
         <ChangeComponent1 />
