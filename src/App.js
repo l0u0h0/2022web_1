@@ -29,6 +29,7 @@ import ForceUpdate from "./08/8_7";
 import LifecycleExample from "./08/8_9";
 import Counter from "./08/8_11";
 import NewCounter from "./08/8_12";
+import Quiz1 from "./08/8_13";
 
 class App extends Component {
   constructor(props) {
@@ -138,6 +139,7 @@ class App extends Component {
             </button>
           </div>
         </div>
+        <Quiz1 value={20} />
       </div>
     );
   }
