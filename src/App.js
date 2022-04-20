@@ -1,53 +1,54 @@
 import React, { Component } from "react";
 //import logo from './logo.svg';
-import "./App.css";
-import "./Component.css";
-import R001Component from "./R001_Component";
-import R002Component from "./R002_Component";
-import Es6 from "../src/04/4_13";
-import Variable from "../src/04/4_14";
-import SpreadOperator from "../src/04/4_15";
-import ClassPrototype from "./04/4_16";
-import Map from "./05/5_6";
-// import Jqeury from "./05/5_7";
-import ClickComponent from "./08/8_4";
-import ChildComponent from "./05/5_9";
-import PropsComponent from "./05/5_2";
-import BooleanComponent from "./06/6_2";
-import DefaultPropsComponent from "./06/6_4";
-import ChildProperty from "./06/6_5";
-import BooleanComponent1 from "./06/6_6";
-import ChildComponent2 from "./06/6_7";
-import StateExample from "./06/6_8";
-import PropertyComponent from "./07/7_1";
-import Child from "./07/7_2";
-import ChildComponent3 from "./07/7_3";
-import LunchComponent from "./07/7_5";
-import ChangeComponent from "./08/8_5";
-import ChangeComponent1 from "./08/8_6";
-import ForceUpdate from "./08/8_7";
-import LifecycleExample from "./08/8_9";
-import Counter from "./08/8_11";
-import NewCounter from "./08/8_12";
-import Quiz1 from "./08/8_13";
-import Quiz2 from "./08/8_14";
+// import "./App.css";
+// import "./Component.css";
+// import R001Component from "./R001_Component";
+// import R002Component from "./R002_Component";
+// import Es6 from "../src/04/4_13";
+// import Variable from "../src/04/4_14";
+// import SpreadOperator from "../src/04/4_15";
+// import ClassPrototype from "./04/4_16";
+// import Map from "./05/5_6";
+// // import Jqeury from "./05/5_7";
+// import ClickComponent from "./08/8_4";
+// import ChildComponent from "./05/5_9";
+// import PropsComponent from "./05/5_2";
+// import BooleanComponent from "./06/6_2";
+// import DefaultPropsComponent from "./06/6_4";
+// import ChildProperty from "./06/6_5";
+// import BooleanComponent1 from "./06/6_6";
+// import ChildComponent2 from "./06/6_7";
+// import StateExample from "./06/6_8";
+// import PropertyComponent from "./07/7_1";
+// import Child from "./07/7_2";
+// import ChildComponent3 from "./07/7_3";
+// import LunchComponent from "./07/7_5";
+// import ChangeComponent from "./08/8_5";
+// import ChangeComponent1 from "./08/8_6";
+// import ForceUpdate from "./08/8_7";
+// import LifecycleExample from "./08/8_9";
+// import Counter from "./08/8_11";
+// import NewCounter from "./08/8_12";
+// import Quiz1 from "./08/8_13";
+// import Quiz2 from "./08/8_14";
+import GuguComponent from "./09/9_1";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { count: 10 };
-    this.resetCount = this.resetCount.bind(this);
-  }
-  resetCount() {
-    this.setState(({ count }) => ({ count: count + 10 }));
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = { count: 10 };
+  //   this.resetCount = this.resetCount.bind(this);
+  // }
+  // resetCount() {
+  //   this.setState(({ count }) => ({ count: count + 10 }));
+  // }
   render() {
-    const func = () => {
-      console.log("FunctionProps: function!");
-    };
+    // const func = () => {
+    //   console.log("FunctionProps: function!");
+    // };
     return (
       <div className="App">
-        <h1 className="title">리액트 프로그래밍 시작</h1>
+        {/* <h1 className="title">리액트 프로그래밍 시작</h1>
         <R001Component></R001Component>
         <R002Component></R002Component>
         <h1>Start React 200!</h1>
@@ -58,7 +59,7 @@ class App extends Component {
         <ClassPrototype />
         <Map />
         {/* <Jqeury /> */}
-        <h1>부모 컴포넌트</h1>
+        {/* <h1>부모 컴포넌트</h1>
         <ChildComponent />
         <PropsComponent name="안녕?" />
         <div>
@@ -144,7 +145,9 @@ class App extends Component {
         <Quiz2 value={10} />
         <div>
           <ClickComponent count={10} />
-        </div>
+        </div>{" "} */}
+
+        <GuguComponent />
       </div>
     );
   }

@@ -24,12 +24,6 @@ export default class Quiz2 extends React.Component {
       this.setState(({ type }) => ({ type: type + 1 }));
     }, 1000);
   }
-  showstate() {
-    return this.state.originvalue;
-  }
-  showprops() {
-    return this.state.value;
-  }
   showchange() {
     if (this.state.type % 2 === 1) {
       console.log(1);

@@ -1,6 +1,6 @@
 // component lifecycle
 // render()를 포함해 8종류 함수 존재
-// getDericedStateFromProp
+// getDerivedStateFromProp
 // render
 // componentDidMount
 // getDerivedStateFromProp

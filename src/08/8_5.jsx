@@ -9,7 +9,7 @@ export default class ChangeComponent extends React.Component {
     this.changereact = this.changereact.bind(this);
   }
   changereact() {
-    this.setState(() => ({ value: "리액트" }));
+    this.setState({ value: "리액트" });
   }
   render() {
     return (
