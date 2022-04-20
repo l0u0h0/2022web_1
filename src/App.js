@@ -10,6 +10,7 @@ import SpreadOperator from "../src/04/4_15";
 import ClassPrototype from "./04/4_16";
 import Map from "./05/5_6";
 // import Jqeury from "./05/5_7";
+import ClickComponent from "./08/8_4";
 import ChildComponent from "./05/5_9";
 import PropsComponent from "./05/5_2";
 import BooleanComponent from "./06/6_2";
@@ -21,7 +22,6 @@ import StateExample from "./06/6_8";
 import PropertyComponent from "./07/7_1";
 import Child from "./07/7_2";
 import ChildComponent3 from "./07/7_3";
-import ChildComponent4 from "./07/7_4";
 import LunchComponent from "./07/7_5";
 import ChangeComponent from "./08/8_5";
 import ChangeComponent1 from "./08/8_6";
@@ -142,6 +142,9 @@ class App extends Component {
         </div>
         <Quiz1 value={20} />
         <Quiz2 value={10} />
+        <div>
+          <ClickComponent count={10} />
+        </div>
       </div>
     );
   }
