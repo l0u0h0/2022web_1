@@ -18,7 +18,7 @@ export default class GuguComponent extends React.Component {
     return (
       <div>
         {this.state.num1} X {this.state.num2} = ?<br />
-        <form>
+        <form action="">
           <input type="text" />
           <input type="submit" />
         </form>
