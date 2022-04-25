@@ -32,9 +32,13 @@ import React, { Component } from "react";
 // import Quiz1 from "./08/8_13";
 // import Quiz2 from "./08/8_14";
 import GuguComponent from "./09/9_1";
+import ShallowEqual from "./09/9_10";
+import SFC from "./09/9_11";
 import LifecycleEx from "./09/9_2";
 import LifecycleEx1 from "./09/9_3";
 import LifecycleEx2 from "./09/9_4";
+import ComponentClass from "./09/9_8";
+import PureComponent from "./09/9_9";
 
 class App extends Component {
   // constructor(props) {
@@ -166,6 +170,10 @@ class App extends Component {
           <p>CSS 적용하기</p>
           <LifecycleEx2 prop_value="FromApp.js" />
         </div>
+        <ComponentClass />
+        <PureComponent />
+        <ShallowEqual />
+        <SFC somePropValue={"Lee"} />
       </div>
     );
   }

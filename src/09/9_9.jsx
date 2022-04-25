@@ -1,7 +1,7 @@
-// Component 사용하기(class형 컴포넌트)
-import React, { Component } from "react";
+// PureComponent 사용하기(class형 컴포넌트)
+import React from "react";
 
-class ComponentClass extends Component {
+class PureComponent extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -28,4 +28,6 @@ class ComponentClass extends Component {
     );
   }
 }
-export default ComponentClass;
+export default PureComponent;
+// 그냥 문자열에 오버라이딩과 같이 같은 내용으로 바뀌면 재랜더링이 안되지만
+// 객체일 경우에는 같은 내용의 오버라이딩이더라도 재랜더링이 된다.
