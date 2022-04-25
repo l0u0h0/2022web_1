@@ -32,6 +32,9 @@ import React, { Component } from "react";
 // import Quiz1 from "./08/8_13";
 // import Quiz2 from "./08/8_14";
 import GuguComponent from "./09/9_1";
+import LifecycleEx from "./09/9_2";
+import LifecycleEx1 from "./09/9_3";
+import LifecycleEx2 from "./09/9_4";
 
 class App extends Component {
   // constructor(props) {
@@ -148,6 +151,21 @@ class App extends Component {
         </div>{" "} */}
 
         <GuguComponent />
+        <div>
+          <h1>Start React 200!</h1>
+          <p>CSS 적용하기</p>
+          <LifecycleEx prop_value="FromApp.js" />
+        </div>
+        <div>
+          <h1>Start React 200!</h1>
+          <p>CSS 적용하기</p>
+          <LifecycleEx1 prop_value="FromApp.js" />
+        </div>
+        <div>
+          <h1>Start React 200!</h1>
+          <p>CSS 적용하기</p>
+          <LifecycleEx2 prop_value="FromApp.js" />
+        </div>
       </div>
     );
   }
