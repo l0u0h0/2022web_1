@@ -40,6 +40,9 @@ import LifecycleEx2 from "./09/9_4";
 import ComponentClass from "./09/9_8";
 import PureComponent from "./09/9_9";
 import FunctionComponent from "./10/10_1";
+import ReturnMap from "./10/10_12";
+import Counter from "./10/10_13";
+import ScrollSpy from "./10/10_15";
 import ReactHook from "./10/10_2";
 import Fragments from "./10/10_3";
 import ListExample from "./10/10_5";
@@ -56,6 +59,16 @@ class App extends Component {
   // resetCount() {
   //   this.setState(({ count }) => ({ count: count + 10 }));
   // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 1,
+    };
+    this.increateCount = this.increateCount.bind(this);
+  }
+  increateCount() {
+    this.setState(({ count }) => ({ count: count + 1 }));
+  }
   render() {
     // const func = () => {
     //   console.log("FunctionProps: function!");
@@ -188,6 +201,9 @@ class App extends Component {
         <TodoList />
         <TodoList1 /> */}
         <TodoList2 />
+        <ReturnMap />
+        <Counter count={this.state.count} onAdd={this.increateCount} />
+        <ScrollSpy />
       </div>
     );
   }
