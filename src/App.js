@@ -43,6 +43,8 @@ import FunctionComponent from "./10/10_1";
 import ReturnMap from "./10/10_12";
 import Counter from "./10/10_13";
 import ScrollSpy from "./10/10_15";
+import Counter3 from "./10/10_16";
+import Input from "./10/10_17";
 import ReactHook from "./10/10_2";
 import Fragments from "./10/10_3";
 import ListExample from "./10/10_5";
@@ -204,6 +206,15 @@ class App extends Component {
         <ReturnMap />
         <Counter count={this.state.count} onAdd={this.increateCount} />
         <ScrollSpy />
+        <Counter3 />
+        <Input
+          label="이름"
+          name="name"
+          value="홍길동"
+          type="text"
+          errorMessage="이름을 입력해야 합니다"
+          autoFocus={true}
+        />
       </div>
     );
   }

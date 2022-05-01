@@ -22,6 +22,9 @@ export default class ScrollSpy extends React.PureComponent {
       console.log("enter");
     } else {
       console.log("exit");
+      // this.setState(({ todoList }) => ({
+      //   todoList: [...todoList, this.wishList[Math.floor(Math.random() * 20)]],
+      // }));
     }
   }
   componentDidMount() {
