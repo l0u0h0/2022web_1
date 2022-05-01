@@ -39,6 +39,13 @@ import LifecycleEx1 from "./09/9_3";
 import LifecycleEx2 from "./09/9_4";
 import ComponentClass from "./09/9_8";
 import PureComponent from "./09/9_9";
+import FunctionComponent from "./10/10_1";
+import ReactHook from "./10/10_2";
+import Fragments from "./10/10_3";
+import ListExample from "./10/10_5";
+import TodoList from "./10/10_6";
+import TodoList1 from "./10/10_7";
+import TodoList2 from "./10/10_8";
 
 class App extends Component {
   // constructor(props) {
@@ -174,6 +181,13 @@ class App extends Component {
         <PureComponent />
         <ShallowEqual />
         <SFC somePropValue={"Lee"} />
+        <FunctionComponent contents="[THIS IS FUNCTIONCOMPONENT]" />
+        <ReactHook />
+        <Fragments />
+        {/* <ListExample />
+        <TodoList />
+        <TodoList1 /> */}
+        <TodoList2 />
       </div>
     );
   }
