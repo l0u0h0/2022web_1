@@ -25,6 +25,13 @@ class ShallowEqual extends React.PureComponent {
     );
     this.setState({ StateString: "react" });
   }
+  buttonClick = (type) => {
+    if (type === "String") {
+      this.setState({ StateString: "react" });
+    } else {
+      this.setState({ StateArrayObj: ["react", { react: "200" }] });
+    }
+  };
   render() {
     console.log("render start");
     return (

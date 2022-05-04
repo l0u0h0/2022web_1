@@ -195,7 +195,7 @@ class App extends Component {
         <ComponentClass />
         <PureComponent />
         <ShallowEqual />
-        <SFC somePropValue={"Lee"} />
+        <SFC somePropValue={"I'm so HUNGRY"} />
         <FunctionComponent contents="[THIS IS FUNCTIONCOMPONENT]" />
         <ReactHook />
         <Fragments />
