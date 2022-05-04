@@ -8,7 +8,11 @@ export default class TodoList2 extends React.PureComponent {
     ];
     let result = [];
     todoList.forEach((todo) =>
-      result.push(<div key={todo.taskName}>{todo.taskName}</div>)
+      result.push(
+        <div key={todo.taskName}>
+          {todo.taskName}==&gt; {todo.finished ? "O" : "X"}
+        </div>
+      )
     );
     return <div>{result}</div>;
   }
