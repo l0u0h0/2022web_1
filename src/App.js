@@ -31,28 +31,30 @@ import React, { Component } from "react";
 // import NewCounter from "./08/8_12";
 // import Quiz1 from "./08/8_13";
 // import Quiz2 from "./08/8_14";
-import GuguComponent from "./09/9_1";
-import ShallowEqual from "./09/9_10";
-import SFC from "./09/9_11";
-import LifecycleEx from "./09/9_2";
-import LifecycleEx1 from "./09/9_3";
-import LifecycleEx2 from "./09/9_4";
-import ComponentClass from "./09/9_8";
-import PureComponent from "./09/9_9";
-import FunctionComponent from "./10/10_1";
-import ReturnMap from "./10/10_12";
-import Counter from "./10/10_13";
-import ScrollSpy from "./10/10_15";
-import Counter3 from "./10/10_16";
-import Input from "./11/11_1";
-import ReactHook from "./10/10_2";
-import Fragments from "./10/10_3";
-import ListExample from "./10/10_5";
-import TodoList from "./10/10_6";
-import TodoList1 from "./10/10_7";
-import TodoList2 from "./10/10_11";
+// import GuguComponent from "./09/9_1";
+// import ShallowEqual from "./09/9_10";
+// import SFC from "./09/9_11";
+// import LifecycleEx from "./09/9_2";
+// import LifecycleEx1 from "./09/9_3";
+// import LifecycleEx2 from "./09/9_4";
+// import ComponentClass from "./09/9_8";
+// import PureComponent from "./09/9_9";
+// import FunctionComponent from "./10/10_1";
+// import ReturnMap from "./10/10_12";
+// import Counter from "./10/10_13";
+// import ScrollSpy from "./10/10_15";
+// import Counter3 from "./10/10_16";
+// import Input from "./11/11_1";
+// import ReactHook from "./10/10_2";
+// import Fragments from "./10/10_3";
+// import ListExample from "./10/10_5";
+// import TodoList from "./10/10_6";
+// import TodoList1 from "./10/10_7";
+// import TodoList2 from "./10/10_11";
 import Selector from "./11/11_2";
 import Mousemove from "./11/11_3";
+import KeyEvent from "./11/11_4";
+import Submitcomp from "./11/11_5";
 
 class App extends Component {
   // constructor(props) {
@@ -195,7 +197,7 @@ class App extends Component {
         <div>
           <ClickComponent count={10} />
         </div>{" "} */}
-
+        {/* 
         <GuguComponent />
         <div>
           <h1>Start React 200!</h1>
@@ -222,7 +224,7 @@ class App extends Component {
         {/* <ListExample />
         <TodoList />
         <TodoList1 /> */}
-        <TodoList2 />
+        {/* <TodoList2 />
         <ReturnMap />
         <Counter count={this.state.count} onAdd={this.increateCount} />
         <ScrollSpy />
@@ -250,7 +252,8 @@ class App extends Component {
             label="점수"
             onChange={this.changeScore}
           />
-        </div>
+        </div>{" "}
+        */}
         <div>
           <h3>이름과 전공</h3>
           <Selector />
@@ -260,10 +263,12 @@ class App extends Component {
           <Mousemove />
         </div>
         <div>
-          <h3></h3>
+          <h3>키 다운</h3>
+          <KeyEvent />
         </div>
         <div>
-          <h3></h3>
+          <h3>Submit</h3>
+          <Submitcomp />
         </div>
       </div>
     );
