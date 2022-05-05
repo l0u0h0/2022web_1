@@ -51,7 +51,8 @@ import ListExample from "./10/10_5";
 import TodoList from "./10/10_6";
 import TodoList1 from "./10/10_7";
 import TodoList2 from "./10/10_11";
-import Quiz11_1 from "./11/11_2";
+import Selector from "./11/11_2";
+import Mousemove from "./11/11_3";
 
 class App extends Component {
   // constructor(props) {
@@ -252,7 +253,14 @@ class App extends Component {
         </div>
         <div>
           <h3>이름과 전공</h3>
-          <Quiz11_1 />
+          <Selector />
+        </div>
+        <div>
+          <h3>마우스 무브</h3>
+          <Mousemove />
+        </div>
+        <div>
+          <h3></h3>
         </div>
         <div>
           <h3></h3>
