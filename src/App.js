@@ -65,11 +65,18 @@ class App extends Component {
     super(props);
     this.state = {
       count: 1,
+      name: "LeeYuHan",
     };
     this.increateCount = this.increateCount.bind(this);
+    this.onChange = this.onChange.bind(this);
   }
   increateCount() {
     this.setState(({ count }) => ({ count: count + 1 }));
+  }
+  onChange(name, value) {
+    this.setState({
+      [name]: value,
+    });
   }
   render() {
     // const func = () => {
@@ -210,11 +217,15 @@ class App extends Component {
         <Input
           label="이름"
           name="name"
-          value="홍길동"
+          value={this.state.name}
           type="text"
           errorMessage="이름을 입력해야 합니다"
           autoFocus={true}
+          onChange={this.onChange}
         />
+        <div>
+          <button onClick={this.onChange}>{this.state.name}</button>
+        </div>
       </div>
     );
   }
