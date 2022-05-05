@@ -55,6 +55,7 @@ import Selector from "./11/11_2";
 import Mousemove from "./11/11_3";
 import KeyEvent from "./11/11_4";
 import Submitcomp from "./11/11_5";
+import ReactOnclick from "./11/11_6";
 
 class App extends Component {
   // constructor(props) {
@@ -270,6 +271,7 @@ class App extends Component {
           <h3>Submit</h3>
           <Submitcomp />
         </div>
+        <ReactOnclick />
       </div>
     );
   }
