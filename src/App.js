@@ -44,13 +44,14 @@ import ReturnMap from "./10/10_12";
 import Counter from "./10/10_13";
 import ScrollSpy from "./10/10_15";
 import Counter3 from "./10/10_16";
-import Input from "./10/10_17";
+import Input from "./11/11_1";
 import ReactHook from "./10/10_2";
 import Fragments from "./10/10_3";
 import ListExample from "./10/10_5";
 import TodoList from "./10/10_6";
 import TodoList1 from "./10/10_7";
 import TodoList2 from "./10/10_11";
+import Quiz11_1 from "./11/11_2";
 
 class App extends Component {
   // constructor(props) {
@@ -66,14 +67,25 @@ class App extends Component {
     this.state = {
       count: 1,
       name: "LeeYuHan",
+      score: 75,
     };
     this.increateCount = this.increateCount.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.onFocus = this.onFocus.bind(this);
+    this.changeScore = this.changeScore.bind(this);
   }
   increateCount() {
     this.setState(({ count }) => ({ count: count + 1 }));
   }
-  onChange(name, value) {
+  onChange(key, value) {
+    this.setState({
+      [key]: value,
+    });
+  }
+  onFocus() {
+    console.log("11_1.jsx, On Focus!");
+  }
+  changeScore(name, value) {
     this.setState({
       [name]: value,
     });
@@ -222,9 +234,28 @@ class App extends Component {
           errorMessage="이름을 입력해야 합니다"
           autoFocus={true}
           onChange={this.onChange}
+          onFocus={this.onFocus}
         />
         <div>
           <button onClick={this.onChange}>{this.state.name}</button>
+        </div>
+        <div>
+          <h2>QUiz</h2>
+          <Input
+            type="number"
+            name="score"
+            value={this.state.score}
+            errorMessage="50~100사이 숫자 입력"
+            label="점수"
+            onChange={this.changeScore}
+          />
+        </div>
+        <div>
+          <h3>이름과 전공</h3>
+          <Quiz11_1 />
+        </div>
+        <div>
+          <h3></h3>
         </div>
       </div>
     );
