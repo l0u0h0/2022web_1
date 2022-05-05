@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import ReactMouseout from "./11/11_10";
+import ReactOnKey from "./11/11_11";
+import ReactSubmit from "./11/11_12";
+import ReactRef from "./11/11_13";
 //import logo from './logo.svg';
 // import "./App.css";
 // import "./Component.css";
@@ -56,6 +60,9 @@ import Mousemove from "./11/11_3";
 import KeyEvent from "./11/11_4";
 import Submitcomp from "./11/11_5";
 import ReactOnclick from "./11/11_6";
+import ReactChange from "./11/11_7";
+import ReactMousemove from "./11/11_8";
+import ReactMouseover from "./11/11_9";
 
 class App extends Component {
   // constructor(props) {
@@ -272,6 +279,13 @@ class App extends Component {
           <Submitcomp />
         </div>
         <ReactOnclick />
+        <ReactChange />
+        <ReactMousemove />
+        <ReactMouseover />
+        <ReactMouseout />
+        <ReactOnKey />
+        <ReactSubmit />
+        <ReactRef />
       </div>
     );
   }
