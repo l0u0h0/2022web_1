@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "node-sass": "^4.14.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "2.1.7",
+    "sass-loader": "10.0.5",
     "shallow-equal": "^1.2.1",
     "shallowequal": "^1.1.0"
   },
@@ -26,6 +28,17 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@storybook/react": "5.2.6"
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@storybook/addon-actions": "5.2.6",
+    "@storybook/addons": "5.2.6",
+    "@storybook/react": "5.2.6",
+    "babel-loader": "8.0.5",
+    "sass": "^1.51.0",
+    "storybook-addon-jsx": "7.1.13",
+    "webpack": "4.28.3"
+  },
+  "resolutions": {
+    "babel-loader": "8.2.5"
   }
 }

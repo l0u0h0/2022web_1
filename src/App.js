@@ -49,7 +49,7 @@ import ReactRef from "./11/11_13";
 // import Counter from "./10/10_13";
 // import ScrollSpy from "./10/10_15";
 // import Counter3 from "./10/10_16";
-// import Input from "./11/11_1";
+import Input from "./11/11_1";
 // import ReactHook from "./10/10_2";
 // import Fragments from "./10/10_3";
 // import ListExample from "./10/10_5";
@@ -237,7 +237,7 @@ class App extends Component {
         <ReturnMap />
         <Counter count={this.state.count} onAdd={this.increateCount} />
         <ScrollSpy />
-        <Counter3 />
+      <Counter3 />*/}
         <Input
           label="이름"
           name="name"
@@ -248,6 +248,7 @@ class App extends Component {
           onChange={this.onChange}
           onFocus={this.onFocus}
         />
+        {/*
         <div>
           <button onClick={this.onChange}>{this.state.name}</button>
         </div>
