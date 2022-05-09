@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./sass/materialize.scss";
-import ReactMouseout from "./11/11_10";
-import ReactOnKey from "./11/11_11";
-import ReactSubmit from "./11/11_12";
-import ReactRef from "./11/11_13";
+// import ReactMouseout from "./11/11_10";
+// import ReactOnKey from "./11/11_11";
+// import ReactSubmit from "./11/11_12";
+// import ReactRef from "./11/11_13";
 //import logo from './logo.svg';
 // import "./App.css";
 // import "./Component.css";
@@ -49,21 +49,22 @@ import ReactRef from "./11/11_13";
 // import Counter from "./10/10_13";
 // import ScrollSpy from "./10/10_15";
 // import Counter3 from "./10/10_16";
-import Input from "./11/11_1";
+// import Input from "./11/11_1";
 // import ReactHook from "./10/10_2";
 // import Fragments from "./10/10_3";
 // import ListExample from "./10/10_5";
 // import TodoList from "./10/10_6";
 // import TodoList1 from "./10/10_7";
 // import TodoList2 from "./10/10_11";
-import Selector from "./11/11_2";
-import Mousemove from "./11/11_3";
-import KeyEvent from "./11/11_4";
-import Submitcomp from "./11/11_5";
-import ReactOnclick from "./11/11_6";
-import ReactChange from "./11/11_7";
-import ReactMousemove from "./11/11_8";
-import ReactMouseover from "./11/11_9";
+// import Selector from "./11/11_2";
+// import Mousemove from "./11/11_3";
+// import KeyEvent from "./11/11_4";
+// import Submitcomp from "./11/11_5";
+// import ReactOnclick from "./11/11_6";
+// import ReactChange from "./11/11_7";
+// import ReactMousemove from "./11/11_8";
+// import ReactMouseover from "./11/11_9";
+import Page from "./12/12_3";
 
 class App extends Component {
   // constructor(props) {
@@ -238,7 +239,7 @@ class App extends Component {
         <Counter count={this.state.count} onAdd={this.increateCount} />
         <ScrollSpy />
       <Counter3 />*/}
-        <Input
+        {/* <Input
           label="이름"
           name="name"
           value={this.state.name}
@@ -247,7 +248,7 @@ class App extends Component {
           autoFocus={true}
           onChange={this.onChange}
           onFocus={this.onFocus}
-        />
+        /> */}
         {/*
         <div>
           <button onClick={this.onChange}>{this.state.name}</button>
@@ -263,7 +264,6 @@ class App extends Component {
             onChange={this.changeScore}
           />
         </div>{" "}
-        */}
         <div>
           <h3>이름과 전공</h3>
           <Selector />
@@ -287,7 +287,7 @@ class App extends Component {
         <ReactMouseout />
         <ReactOnKey />
         <ReactSubmit />
-        <ReactRef />
+        <ReactRef /> */}
         <div>
           <nav>
             <div className="nav-wrapper">
@@ -295,6 +295,7 @@ class App extends Component {
             </div>
           </nav>
         </div>
+        <Page />
       </div>
     );
   }
