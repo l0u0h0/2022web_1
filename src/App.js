@@ -56,7 +56,7 @@ import "./sass/materialize.scss";
 // import TodoList from "./10/10_6";
 // import TodoList1 from "./10/10_7";
 // import TodoList2 from "./10/10_11";
-// import Selector from "./11/11_2";
+import Selector from "./11/11_2";
 // import Mousemove from "./11/11_3";
 // import KeyEvent from "./11/11_4";
 // import Submitcomp from "./11/11_5";
@@ -118,7 +118,7 @@ class App extends Component {
         <Variable />
         <SpreadOperator />
         <ClassPrototype />
-        <Map />
+    <Map />*/}
         {/* <Jqeury /> */}
         {/* <h1>부모 컴포넌트</h1>
         <ChildComponent />
@@ -263,11 +263,11 @@ class App extends Component {
             label="점수"
             onChange={this.changeScore}
           />
-        </div>{" "}
-        <div>
-          <h3>이름과 전공</h3>
-          <Selector />
-        </div>
+        </div>{" "}*/}
+        {/*
+        
+        */}
+        {/*
         <div>
           <h3>마우스 무브</h3>
           <Mousemove />
@@ -288,6 +288,10 @@ class App extends Component {
         <ReactOnKey />
         <ReactSubmit />
         <ReactRef /> */}
+        <div>
+          <h3>이름과 전공</h3>
+          <Selector />
+        </div>
         <div>
           <nav>
             <div className="nav-wrapper">
