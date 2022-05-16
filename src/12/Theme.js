@@ -6,6 +6,7 @@ export default {
     white: "#FFFFFF",
     blue: "#0000ff",
     gray: "#CCCCCC",
+    red: "#ff0000",
     default: "#000000", // 기본 문자 색상
   },
   // 폰트 사이즈

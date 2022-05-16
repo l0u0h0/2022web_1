@@ -65,6 +65,7 @@ import Selector from "./11/11_2";
 // import ReactMousemove from "./11/11_8";
 // import ReactMouseover from "./11/11_9";
 import Page from "./12/12_3";
+import Text from "./12/12_4";
 
 class App extends Component {
   // constructor(props) {
@@ -300,6 +301,7 @@ class App extends Component {
           </nav>
         </div>
         <Page />
+        <Text />
       </div>
     );
   }
