@@ -66,6 +66,7 @@ import Selector from "./11/11_2";
 // import ReactMouseover from "./11/11_9";
 import Page from "./12/12_3";
 import Text from "./12/12_4";
+import Page1 from "./12/Page";
 
 class App extends Component {
   // constructor(props) {
@@ -304,6 +305,9 @@ class App extends Component {
         <Text>
           <h1>안녕하세요</h1>Hello evrisaoe
         </Text>
+        <div>
+          <Page1 />
+        </div>
       </div>
     );
   }
