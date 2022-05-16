@@ -301,7 +301,9 @@ class App extends Component {
           </nav>
         </div>
         <Page />
-        <Text />
+        <Text>
+          <h1>안녕하세요</h1>Hello evrisaoe
+        </Text>
       </div>
     );
   }
