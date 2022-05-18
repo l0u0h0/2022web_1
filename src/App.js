@@ -68,6 +68,7 @@ import Page from "./12/12_3";
 import Text from "./12/12_4";
 import Page1 from "./12/Page";
 import Input from "./12/12_2";
+import Quiz12weeks from "./12/12_5";
 
 class App extends Component {
   // constructor(props) {
@@ -310,6 +311,7 @@ class App extends Component {
         <div>
           <Page1 />
         </div>
+        <Quiz12weeks />
       </div>
     );
   }
