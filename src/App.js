@@ -67,6 +67,7 @@ import Selector from "./11/11_2";
 import Page from "./12/12_3";
 import Text from "./12/12_4";
 import Page1 from "./12/Page";
+import Input from "./12/12_2";
 
 class App extends Component {
   // constructor(props) {
@@ -294,6 +295,7 @@ class App extends Component {
           <h3>이름과 전공</h3>
           <Selector />
         </div>
+        <Input name={"hello"} />
         <div>
           <nav>
             <div className="nav-wrapper">

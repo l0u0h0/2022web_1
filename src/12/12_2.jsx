@@ -24,11 +24,11 @@ class Input extends PureComponent {
   render() {
     const { errorMessage, label, name, value, type, onFocus } = this.props;
     return (
-      <div>
+      <div className="input-field">
         <input
           ref={this.setRef}
           id={`input_${name}`}
-          classname={`validate ${errorMessage && "invalid"}`}
+          className={`validate ${errorMessage && "invalid"}`}
           value={value}
           onChange={this.handleChange} // input 내용 변경되면 호출
           onFocus={onFocus}
