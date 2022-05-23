@@ -67,6 +67,10 @@ export default withStyles(({ color, size, unit, responsive }) => ({
     fontSize: size.md,
     padding: unit * 2,
     cursor: "pointer",
+    "@media (max-width: 600px)": { fontSize: 20 },
+    [responsive.small]: {
+      width: "100%",
+    },
   },
   xlarge: {
     fontSize: size.xg,

@@ -1,9 +1,13 @@
-export const LARGE_AND_ABOVE = "largeAndAbove";
-const BREAKPOINT_NAMES = { LARGE: "large", MEDIUM: "medium", SMALL: "small" };
+export const LARGE_AND_ABOVE = "largeAndAbove"; // 컴퓨터 모니터용
+const BREAKPOINT_NAMES = {
+  LARGE: "large", // 컴퓨터 모니터용
+  MEDIUM: "medium", // 태블릿용
+  SMALL: "small", // 스마트폰용
+};
 const breakpoints = {
-  [BREAKPOINT_NAMES.LARGE]: 1128,
-  [BREAKPOINT_NAMES.MEDIUM]: 744,
-  [BREAKPOINT_NAMES.SMALL]: 327,
+  [BREAKPOINT_NAMES.LARGE]: 1128, // 컴퓨터 모니터용
+  [BREAKPOINT_NAMES.MEDIUM]: 744, // 태블릿용
+  [BREAKPOINT_NAMES.SMALL]: 327, // 스마트폰 용
 };
 const responsive = {
   [LARGE_AND_ABOVE]: `@media (min-width: ${
