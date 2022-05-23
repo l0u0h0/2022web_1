@@ -10,4 +10,9 @@ storiesOf("Button", module)
     <Button primary large>
       전송하기
     </Button>
+  ))
+  .addWithJSX("secondary, small", () => (
+    <Button secondary small>
+      전송하기
+    </Button>
   ));
