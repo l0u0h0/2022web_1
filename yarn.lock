@@ -2465,6 +2465,28 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
+"@wojtekmaj/enzyme-adapter-react-17@^0.6.7":
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/@wojtekmaj/enzyme-adapter-react-17/-/enzyme-adapter-react-17-0.6.7.tgz#7784bd32f518b186218cebb26c98c852676f30b0"
+  integrity sha512-B+byiwi/T1bx5hcj9wc0fUL5Hlb5giSXJzcnEfJVl2j6dGV2NJfcxDBYX0WWwIxlzNiFz8kAvlkFWI2y/nscZQ==
+  dependencies:
+    "@wojtekmaj/enzyme-adapter-utils" "^0.1.4"
+    enzyme-shallow-equal "^1.0.0"
+    has "^1.0.0"
+    prop-types "^15.7.0"
+    react-is "^17.0.0"
+    react-test-renderer "^17.0.0"
+
+"@wojtekmaj/enzyme-adapter-utils@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@wojtekmaj/enzyme-adapter-utils/-/enzyme-adapter-utils-0.1.4.tgz#bcd411ad6e368f17dce5425582c2907104cdb1ad"
+  integrity sha512-ARGIQSIIv3oBia1m5Ihn1VU0FGmft6KPe39SBKTb8p7LSXO23YI4kNtc4M/cKoIY7P+IYdrZcgMObvedyjoSQA==
+  dependencies:
+    function.prototype.name "^1.1.0"
+    has "^1.0.0"
+    object.fromentries "^2.0.0"
+    prop-types "^15.7.0"
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
@@ -5610,7 +5632,7 @@ enzyme-adapter-utils@^1.14.0:
     prop-types "^15.7.2"
     semver "^5.7.1"
 
-enzyme-shallow-equal@^1.0.1, enzyme-shallow-equal@^1.0.4:
+enzyme-shallow-equal@^1.0.0, enzyme-shallow-equal@^1.0.1, enzyme-shallow-equal@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/enzyme-shallow-equal/-/enzyme-shallow-equal-1.0.4.tgz#b9256cb25a5f430f9bfe073a84808c1d74fced2e"
   integrity sha512-MttIwB8kKxypwHvRynuC3ahyNc+cFbR8mjVIltnmzQ0uKGqmsfO4bfBuLxb0beLNPhjblUEYvEbsg+VSygvF1Q==
@@ -11355,7 +11377,7 @@ prop-types-exact@^1.2.0:
     object.assign "^4.1.0"
     reflect.ownkeys "^0.2.0"
 
-prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.0, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -11770,7 +11792,7 @@ react-inspector@^3.0.2:
     is-dom "^1.0.9"
     prop-types "^15.6.1"
 
-react-is@17.0.2:
+react-is@17.0.2, react-is@^17.0.0, react-is@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
@@ -11876,7 +11898,7 @@ react-scripts@2.1.7:
   optionalDependencies:
     fsevents "1.2.4"
 
-react-shallow-renderer@^16.15.0:
+react-shallow-renderer@^16.13.1, react-shallow-renderer@^16.15.0:
   version "16.15.0"
   resolved "https://registry.yarnpkg.com/react-shallow-renderer/-/react-shallow-renderer-16.15.0.tgz#48fb2cf9b23d23cde96708fe5273a7d3446f4457"
   integrity sha512-oScf2FqQ9LFVQgA73vr86xl2NaOIX73rh+YFqcOp68CWj56tSfgtGKrEbyhCj0rSijyG9M1CYprTh39fBi5hzA==
@@ -11915,6 +11937,16 @@ react-syntax-highlighter@^8.0.1:
     lowlight "~1.9.1"
     prismjs "^1.8.4"
     refractor "^2.4.1"
+
+react-test-renderer@^17.0.0:
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-17.0.2.tgz#4cd4ae5ef1ad5670fc0ef776e8cc7e1231d9866c"
+  integrity sha512-yaQ9cB89c17PUb0x6UfWRs7kQCorVdHlutU1boVPEsB8IDZH6n9tHxMacc3y0JoXOJUsZb/t/Mb8FUWMKaM7iQ==
+  dependencies:
+    object-assign "^4.1.1"
+    react-is "^17.0.2"
+    react-shallow-renderer "^16.13.1"
+    scheduler "^0.20.2"
 
 react-test-renderer@^18.1.0:
   version "18.1.0"
