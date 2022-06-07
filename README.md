@@ -118,3 +118,13 @@ describe("<test>", () => {
   테스트 중인 컴포넌트 이외에도 연결된 자식컴포넌트까지 모두 출력하기에,
 - 또한 리액트는 제이쿼리와 같이 엘리먼트 추출 함수를 제공하지 않기때문에  
   화면 출력을 검사하기 위해서는 번거롭다.
+- `yarn add --dev enzyme enzyme-adapter-react-16.3 react-test-renderer`
+- 테스트 환경에 `enzyme` 추가하기
+
+```js
+// src/setupTests.js
+import { configure } from "enzyme";
+import Adapter from "enzyme-adapter-react-16.3";
+
+configure({ adapter: new Adapter() });
+```
