@@ -11,4 +11,12 @@ describe("<Text>", () => {
   it("contains <span>", () => {
     expect(mount(<Text>테스트</Text>).find("span")).toHaveLength(1);
   });
+  it("contains <span>2", () => {
+    expect(
+      shallow(<Text>테스트</Text>)
+        .dive()
+        .dive()
+        .find("span")
+    ).toHaveLength(1);
+  });
 });
