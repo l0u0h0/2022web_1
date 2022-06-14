@@ -31,19 +31,19 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@babel/core": "^7.17.10",
-    "@babel/preset-env": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
     "@storybook/addon-actions": "5.2.6",
     "@storybook/addons": "5.2.6",
     "@storybook/react": "5.2.6",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
-    "babel-loader": "8.0.5",
+    "babel-loader": "^8.2.5",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16.3": "^1.7.4",
     "react-test-renderer": "^18.1.0",
     "sass": "^1.51.0",
     "storybook-addon-jsx": "7.1.13",
-    "webpack": "4.28.3"
+    "webpack": "^5.73.0"
   },
   "resolutions": {
     "babel-loader": "8.2.5"

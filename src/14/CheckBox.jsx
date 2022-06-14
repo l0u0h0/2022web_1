@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
+import withStyles, { css } from "../12/withStyles";
 
 export default class CheckBox extends PureComponent {
   constructor(props) {
@@ -40,7 +41,11 @@ export default class CheckBox extends PureComponent {
           />
           {children}
         </div>
-        {errorMessage && <div>{errorMessage}</div>}
+        {errorMessage && (
+          <div>
+            <span {...css(styles.errorText)}>{errorMessage}</span>
+          </div>
+        )}
       </label>
     );
   }
