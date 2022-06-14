@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./sass/materialize.scss";
+// import "./sass/materialize.scss";
 // import ReactMouseout from "./11/11_10";
 // import ReactOnKey from "./11/11_11";
 // import ReactSubmit from "./11/11_12";
 // import ReactRef from "./11/11_13";
 //import logo from './logo.svg';
-// import "./App.css";
+import "./App.css";
 // import "./Component.css";
 // import R001Component from "./R001_Component";
 // import R002Component from "./R002_Component";
@@ -56,7 +56,7 @@ import "./sass/materialize.scss";
 // import TodoList from "./10/10_6";
 // import TodoList1 from "./10/10_7";
 // import TodoList2 from "./10/10_11";
-import Selector from "./11/11_2";
+// import Selector from "./11/11_2";
 // import Mousemove from "./11/11_3";
 // import KeyEvent from "./11/11_4";
 // import Submitcomp from "./11/11_5";
@@ -64,11 +64,12 @@ import Selector from "./11/11_2";
 // import ReactChange from "./11/11_7";
 // import ReactMousemove from "./11/11_8";
 // import ReactMouseover from "./11/11_9";
-import Page from "./12/12_3";
-import Text from "./12/12_4";
-import Page1 from "./12/Page";
-import Input from "./12/12_2";
-import Quiz12weeks from "./12/12_5";
+// import Page from "./12/12_3";
+// import Text from "./12/12_4";
+// import Page1 from "./12/Page";
+// import Input from "./12/12_2";
+// import Quiz12weeks from "./12/12_5";
+import CheckBox from "./14/CheckBox";
 
 class App extends Component {
   // constructor(props) {
@@ -292,7 +293,7 @@ class App extends Component {
         <ReactOnKey />
         <ReactSubmit />
         <ReactRef /> */}
-        <div>
+        {/* <div>
           <h3>이름과 전공</h3>
           <Selector />
         </div>
@@ -311,7 +312,10 @@ class App extends Component {
         <div>
           <Page1 />
         </div>
-        <Quiz12weeks />
+        <Quiz12weeks /> */}
+        <CheckBox checked label="계약 동의">
+          게약에 동의 하시면 체크 하십시오
+        </CheckBox>
       </div>
     );
   }
